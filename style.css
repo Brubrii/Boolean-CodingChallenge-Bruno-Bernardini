@@ -1,0 +1,79 @@
+body{
+  background-image: url("background.jpg");
+  background-size: cover;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Parametri del pannello semitrasparente principale. */
+body > div{
+  width: 63%;   /* Dove possibile si usano le percentuali per adattarsi al meglio alla dimensione della schermata. */
+  margin: auto;
+  margin-top: 20px;
+  color: white;
+  font-weight: 600;
+  background-color: rgb(0,0,0,0.50);
+  border-radius: 25px;
+  box-sizing: border-box;
+  padding: 5.5%;
+}
+
+header{
+  color: lime;
+  margin-bottom: 5px;
+}
+
+nav{
+  padding: 1%;
+  background-color: lime;
+  margin-bottom: 25px;
+}
+
+/* Sezione singola del main. */
+main section{
+  font-size: 19px;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.topPart{
+  font-size: 30px;
+  text-align: center;
+  box-sizing: content-box;
+}
+
+/* Definizione della barra di ricarica generica. */
+.chargeBar{
+  height: 30px;
+  width: 60%;
+  border-radius: 5px;
+}
+
+/* Sottoclassi che personalizzano una chargeBar generica. */
+.chargeBar.low{
+  background-color: rgb(153, 51, 51);
+  width: 17%;
+}
+
+.chargeBar.medium{
+  background-color: rgb(255, 179, 102);
+  width: 35%;
+}
+
+.chargeBar.high{
+  background-color: rgb(0, 204, 0);
+}
+
+/* Classe che posiziona una freccia verso destra all'inizio del suo contenuto. */
+.arrow:before{
+  content: "\21A6";
+}
+
+.sectionTitle{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#logo{
+  width: 26.25%;
+  height: auto;
+}

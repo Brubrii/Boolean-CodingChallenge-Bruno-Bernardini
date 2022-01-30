@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <!-- Link per scaricare il font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <title>CodingChallenge - Bruno Bernardini</title>
+  </head>
+  <body>
+    <!-- Pannello semitrasparente contenente tutte le info. -->
+    <div>
+      <!-- "header" e "nav" hanno alcune caratteristiche comuni, quindi vengono considerate "topPart". -->
+      <div class="topPart">
+        <header>
+          <img src="logo.png" id="logo">
+          <div>Taking Booleaners from A to B</div>
+        </header>
+        <nav>
+          <div>
+            <input type="button" value="Prenota">
+            <input type="button" value="Termina prenotazione">
+            <input type="button" value="Accendi luci">
+          </div>
+        </nav>
+      </div>
+      <!-- La parte principale è divisa in sezioni con le stesse caratteristiche -->
+      <main>
+        <section>
+          <div class="sectionTitle">
+            <input type="checkbox" name="Monopattino"> Monopattino Gino22
+          </div>
+          <!-- Questo tag mostra una freccia verso destra all'inizio del contenuto. -->
+          <div class="arrow"> Via Guadalametri - a 220 metri da te</div>
+          <div>Stato carica:</div>
+          <!-- La classe .chargeBar crea una barra della dimensione massima, definendone le specifiche di base; -->
+          <!-- Le sottoclassi .low, .medium e .high ne ridefiniscono la lunghezza e il colore. -->
+          <div class="chargeBar medium"></div>
+        </section>
+        <section>
+          <div class="sectionTitle">
+            <input type="checkbox" name="Monopattino"> Monopattino Mike24
+          </div>
+          <div class="arrow"> Via Ricciardoni - a 420 metri da te</div>
+          <div>Stato carica:</div>
+          <div class="chargeBar high"></div>
+        </section>
+        <section>
+          <div class="sectionTitle">
+            <input type="checkbox" name="Monopattino"> Monopattino Fede154
+          </div>
+          <div class="arrow"> Via Mentarini - a 490 metri da te</div>
+          <div>Stato carica:</div>
+          <div class="chargeBar low"></div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
